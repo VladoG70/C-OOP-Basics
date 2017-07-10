@@ -22,7 +22,7 @@ namespace _03_Mankind
             get { return this.firstName; }
             private set
                 {
-                if (!Char.IsUpper(value.First()))
+                if (!Char.IsLetter(value.First()) || !Char.IsUpper(value.First()))
                     {
                     throw new ArgumentException("Expected upper case letter! Argument: firstName");
                     }
@@ -39,7 +39,7 @@ namespace _03_Mankind
             get { return this.lastName; }
             private set
                 {
-                if (!Char.IsUpper(value.First()))
+                if (!Char.IsLetter(value.First()) || !Char.IsUpper(value.First()))
                     {
                     throw new ArgumentException("Expected upper case letter! Argument: lastName");
                     }

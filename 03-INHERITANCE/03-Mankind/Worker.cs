@@ -25,7 +25,7 @@ namespace _03_Mankind
                 {
                 if (value <= 10)
                     {
-                    throw new ArgumentException("Expected value mismatch!Argument: weekSalary");
+                    throw new ArgumentException("Expected value mismatch! Argument: weekSalary");
                     }
                 this.weekSalary = value;
                 }

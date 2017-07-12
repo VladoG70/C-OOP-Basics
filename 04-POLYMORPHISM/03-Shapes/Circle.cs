@@ -32,7 +32,7 @@ public class Circle : Shape
 
     public override string Draw()
         {
-        return base.Draw() + "ooo- Circle -ooo";
+        return base.Draw() + "Circle";
         }
     }
 

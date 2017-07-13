@@ -20,11 +20,11 @@ namespace _01_Person
         public virtual string Name
             {
             get { return this.name; }
-            set
+            private set
                 {
                 if (value.Length < 3)
                     {
-                    throw new ArgumentException(@"Name’s length should not be less than 3 symbols!");
+                    throw new ArgumentException("Name's length should not be less than 3 symbols!");
                     }
                 this.name = value;
                 }
@@ -34,7 +34,7 @@ namespace _01_Person
             {
             get { return this.age; }
 
-            set
+            protected set
                 {
                 if (value < 0)
                     {

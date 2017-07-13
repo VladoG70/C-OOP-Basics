@@ -7,15 +7,15 @@ namespace _05_MordorsCrueltyPlan
         {
         static void Main(string[] args)
             {
-                var gandalf = new Gandalf();
-                var foodTokens = Console.ReadLine().Split(' ');
+            var gandalf = new Gandalf();
+            var foodTokens = Console.ReadLine().Split(new[] { '\t', ' ', '\n' }, StringSplitOptions.RemoveEmptyEntries);
 
-                foreach (var food in foodTokens)
+            foreach (var food in foodTokens)
                 {
-                    gandalf.TakeFood(food.ToLower());
+                gandalf.TakeFood(food.ToLower());
                 }
 
-                Console.WriteLine(gandalf);
+            Console.WriteLine(gandalf);
             }
         }
     }

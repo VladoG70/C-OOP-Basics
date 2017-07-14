@@ -1,4 +1,6 @@
-﻿namespace _03_WildFarm.AnimalModels
+﻿using _03_WildFarm.FoodModels;
+
+namespace _03_WildFarm.AnimalModels
     {
     public class Cat : Felime
         {
@@ -15,7 +17,6 @@
             get { return this.catBreed; }
             private set { this.catBreed = value; }
             }
-
 
         public override string MakeSound()
             {

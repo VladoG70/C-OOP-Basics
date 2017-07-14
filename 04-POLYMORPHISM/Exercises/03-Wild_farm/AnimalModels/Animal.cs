@@ -14,7 +14,7 @@ namespace _03_WildFarm.AnimalModels
             {
             this.AnimalType = animalType;
             this.AnimalName = animalName;
-            this.AnimalWeight = animalWeight;                            
+            this.AnimalWeight = animalWeight;
             }
 
         public string AnimalType
@@ -41,38 +41,12 @@ namespace _03_WildFarm.AnimalModels
         public int FoodEaten
             {
             get { return this.foodEaten; }
-            private set { this.foodEaten += value; }
+            private set { this.foodEaten = value; }
             }
 
-        public void Eat(Food food)
+        public virtual void Eat(Food food)
             {
-            switch (this.GetType().Name)
-                {
-                case "Cat":
-                    this.FoodEaten = food.Quantity;
-                    break;
-                case "Tiger":
-                    if (!(food.GetType().Name == "Meat"))
-                        {
-                        throw new ArgumentException($"{this.GetType().Name}s are not eating that type of food!");
-                        }
-                    this.FoodEaten = food.Quantity;
-                    break;
-                case "Mouse":
-                    if (!(food.GetType().Name == "Vegetable"))
-                        {
-                        throw new ArgumentException($"{this.GetType().Name}s are not eating that type of food!");
-                        }
-                    this.FoodEaten = food.Quantity;
-                    break;
-                case "Zebra":
-                    if (!(food.GetType().Name == "Vegetable"))
-                        {
-                        throw new ArgumentException($"{this.GetType().Name}s are not eating that type of food!");
-                        }
-                    this.FoodEaten = food.Quantity;
-                    break;
-                }
+            this.FoodEaten += food.Quantity;
             }
 
         public abstract string MakeSound();

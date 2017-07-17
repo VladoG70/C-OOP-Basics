@@ -1,0 +1,12 @@
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\09-C# Advanced - May 2017\00-0-Exercises\00-3-BashSoft-Project\BashSoft\bin\Debug\BashSoft.exe.config
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\09-C# Advanced - May 2017\00-0-Exercises\00-3-BashSoft-Project\BashSoft\bin\Debug\BashSoft.exe
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\09-C# Advanced - May 2017\00-0-Exercises\00-3-BashSoft-Project\BashSoft\bin\Debug\BashSoft.pdb
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\09-C# Advanced - May 2017\00-0-Exercises\00-3-BashSoft-Project\BashSoft\obj\Debug\BashSoft.csprojResolveAssemblyReference.cache
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\09-C# Advanced - May 2017\00-0-Exercises\00-3-BashSoft-Project\BashSoft\obj\Debug\BashSoft.exe
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\09-C# Advanced - May 2017\00-0-Exercises\00-3-BashSoft-Project\BashSoft\obj\Debug\BashSoft.pdb
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\10-C# OOP Basics - June 2017\00-0-Exercises\00-1-BashSoft-Project\BashSoft\bin\Debug\BashSoft.exe.config
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\10-C# OOP Basics - June 2017\00-0-Exercises\00-1-BashSoft-Project\BashSoft\obj\Debug\BashSoft.exe
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\10-C# OOP Basics - June 2017\00-0-Exercises\00-1-BashSoft-Project\BashSoft\obj\Debug\BashSoft.pdb
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\10-C# OOP Basics - June 2017\00-0-Exercises\00-1-BashSoft-Project\BashSoft\bin\Debug\BashSoft.exe
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\10-C# OOP Basics - June 2017\00-0-Exercises\00-1-BashSoft-Project\BashSoft\bin\Debug\BashSoft.pdb
+D:\My_Documents-HDD\LEARN_SOFTWARE\SoftUNI\10-C# OOP Basics - June 2017\00-0-Exercises\00-1-BashSoft-Project\BashSoft\obj\Debug\BashSoft.csprojResolveAssemblyReference.cache

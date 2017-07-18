@@ -1,9 +1,7 @@
-﻿using System;
+﻿using BashSoft.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BashSoft
     {
@@ -48,10 +46,7 @@ namespace BashSoft
                     {
                     OutputWriter.DisplayException(ExceptionMessages.UnauthorizedAccessExceptionMessage);
                     }
-
-
                 }
-
             }
 
         public void CreateDirectoryInCurrentFolder(string name)
@@ -63,9 +58,8 @@ namespace BashSoft
                 }
             catch (ArgumentException)
                 {
-                OutputWriter.DisplayException(ExceptionMessages.ForbiddenSymbolsContainedInName);
+                throw new InvalidFileNameException();
                 }
-
             }
 
         private string GetCurrentDirectoryPath()
@@ -86,7 +80,7 @@ namespace BashSoft
                     }
                 catch (ArgumentOutOfRangeException)
                     {
-                    OutputWriter.DisplayException(ExceptionMessages.UnableToGoHigherInPartitionHierarchy);
+                    throw new InvalidPathException();
                     }
                 }
             else
@@ -101,12 +95,10 @@ namespace BashSoft
             {
             if (!Directory.Exists(absolutePath))
                 {
-                OutputWriter.DisplayException(ExceptionMessages.InvalidPath);
-                return;
+                throw new InvalidPathException();
                 }
 
             SessionData.currentPath = absolutePath;
             }
-
         } // End of class IOManager
     }

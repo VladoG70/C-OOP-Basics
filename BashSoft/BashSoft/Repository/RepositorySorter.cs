@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BashSoft
     {
@@ -28,7 +26,7 @@ namespace BashSoft
                 }
             else
                 {
-                OutputWriter.DisplayException(ExceptionMessages.InvalidComparisonQuery);
+                throw new ArgumentException(ExceptionMessages.InvalidComparisonQuery);
                 }
             }
 

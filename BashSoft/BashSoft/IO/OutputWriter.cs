@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BashSoft
     {
@@ -35,6 +32,5 @@ namespace BashSoft
             {
             OutputWriter.WriteMessageOnNewLine(string.Format($"{student.Key} - {String.Join(", ", student.Value)}"));
             }
-
         }
     }

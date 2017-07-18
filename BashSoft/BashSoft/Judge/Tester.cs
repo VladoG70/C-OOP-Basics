@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using BashSoft.Exceptions;
+using System;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 
 namespace BashSoft
     {
@@ -26,19 +22,16 @@ namespace BashSoft
                 PrintOutput(mismatches, hasMismatch, mismatchPath);
                 OutputWriter.WriteMessageOnNewLine("Files read!");
                 }
-            catch (FileNotFoundException)
+            catch (IOException)
                 {
-                OutputWriter.DisplayException(ExceptionMessages.InvalidPath);
+                throw new InvalidPathException();
                 }
-
             }
-
 
         private string[] GetLineWithPossibleMismatches(string[] actualOutputLines, string[] expectedOutputLines, out bool hasMismatch)
             {
             hasMismatch = false;
             string output = String.Empty;
-            //string[] mismatches = new string[actualOutputLines.Length]; ---> MOVE below
 
             OutputWriter.WriteMessageOnNewLine("Comparing files ...");
 
@@ -53,8 +46,6 @@ namespace BashSoft
             // Move from above f04-p-02
             string[] mismatches = new string[minOutputLines];
 
-
-            //for (int index = 0; index < actualOutputLines.Length; index++)
             for (int index = 0; index < minOutputLines; index++)
                 {
                 string actualLine = actualOutputLines[index];
@@ -97,15 +88,7 @@ namespace BashSoft
                     }
 
                 // f04-p05
-                try
-                    {
-                    File.WriteAllLines(mismatchPath, mismatches);
-                    }
-                catch (DirectoryNotFoundException)
-                    {
-                    OutputWriter.DisplayException(ExceptionMessages.InvalidPath);
-                    }
-                //return; --> move below
+                File.WriteAllLines(mismatchPath, mismatches);
                 }
             else
                 {
@@ -114,6 +97,5 @@ namespace BashSoft
 
             return;
             }
-
         } // END of class TESTER
     }

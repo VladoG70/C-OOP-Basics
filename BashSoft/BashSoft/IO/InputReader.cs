@@ -19,7 +19,7 @@ namespace BashSoft
             string input = Console.ReadLine();
             input = input.Trim();
 
-            while (input != endCommand)
+            while (input.ToLower() != endCommand)
                 {
                 this.interpreter.InterpredCommand(input);
                 OutputWriter.WriteMessage($"{SessionData.currentPath}> ");
@@ -27,6 +27,5 @@ namespace BashSoft
                 input = input.Trim();
                 }
             }
-
         } // END of InputReader
     }

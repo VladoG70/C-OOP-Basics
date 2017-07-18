@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace BashSoft
     {
@@ -24,7 +23,7 @@ namespace BashSoft
                 }
             else
                 {
-                OutputWriter.DisplayException(ExceptionMessages.InvalidStudentFilter);
+                throw new ArgumentException(ExceptionMessages.InvalidStudentFilter);
                 }
             }
 
